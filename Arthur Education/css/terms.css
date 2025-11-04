@@ -1,0 +1,179 @@
+html {
+    overflow-y: scroll;
+}
+
+.ArthurEducation {
+    font-size: 20px;
+    font-weight: 700;
+    color: #243344;
+    letter-spacing: 0.5px;
+    margin-left: 13px;
+}
+
+.Menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #243344;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.Menu a:hover {
+    background-color: #9eb7d9;
+    color: white;
+}
+
+.Menu a.Aktif {
+    background-color: #587ca0;
+    color: white;
+}
+
+.Header {
+    text-align: center;
+    background-color: #b8cde3;
+    color: #243344;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 12px 0;
+    margin: 30px auto;
+    border-radius: 50px;
+    width: 300px;
+}
+
+.utama {
+  margin: 40px auto;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.bagian {
+  background: #b8cde3;
+  color: #243344;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #d5deee;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.bagian:hover {
+  transform: translateY(-4px);
+  background: #a5bde0;
+}
+
+.bagian .circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #587ca0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  position: absolute;
+  left: -55px;
+  top: 20px;
+}
+
+ul {
+  margin: 10px 0 0 20px;
+}
+
+details {
+  border-radius: 10px;
+  border: 1px solid #d5deee;
+  background: #b8cde3;
+  cursor: pointer;
+  transition: .3s ease;
+  padding: 18px 20px;
+  position: relative;
+}
+
+details:hover {
+  background: #a5bde0;
+  transform: translateY(-2px);
+}
+
+summary {
+  list-style: none;
+  font-weight: 600;
+  color: #243344;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary span {
+  font-weight: 700;
+}
+
+summary::after {
+  content: "›";
+  font-size: 22px;
+  margin-left: auto;
+  transition: .3s;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+details p {
+  margin-top: 12px;
+  color: #243344;
+  font-size: 15px;
+  line-height: 1.55;
+  animation: animasi .25s ease-in;
+}
+
+@keyframes animasi {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+details[open] {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  border: 2px solid #c7cad8;
+}
+
+details summary {
+  background: #eaf2fb;
+  padding: 14px;
+  font-weight: 700;
+  color: #243344;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: .2s;
+}
+
+details[open] summary {
+  background: #587ca0;
+  color: white;
+  border-radius: 8px;
+}
+
+details p {
+  margin-top: 12px;
+  padding: 12px 15px;
+  background: transparent;
+  font-size: 15px;
+  color: #243344;
+}
+
+details {
+  transition: background .25s ease;
+}
+
+

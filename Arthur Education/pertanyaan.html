@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arthur Education - Pertanyaan Terbaru</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+:root{--p1:#0A1128;--p2:#001F54;--p3:#034078;--p4:#1282A2;--p5:#FEFCFB;--nav:64px}
+body{background:var(--p5);color:var(--p1);padding-top:var(--nav);min-height:100vh}
+.topbar{position:fixed;inset:0 0 auto 0;height:var(--nav);background:var(--p2);z-index:1040;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.topbar .wrap{height:var(--nav);display:flex;align-items:center;justify-content:space-between}
+.brand{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-toggle{display:none}
+.hamburger{color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;padding:.25rem .5rem;border-radius:.5rem}
+.nav-menu a{color:#fff;text-decoration:none;opacity:.95;padding:.55rem .9rem;border-radius:.5rem;display:block;white-space:nowrap}
+.nav-menu a:hover{background:rgba(255,255,255,.1);color:var(--p4)}
+@media (min-width:992px){.hamburger{display:none}.nav-menu{display:block!important}.nav-menu ul{display:flex;gap:.25rem;margin:0}}
+@media (max-width:991.98px){.nav-menu{display:none;position:fixed;top:var(--nav);left:0;right:0;background:var(--p2);padding:.75rem .5rem 1rem;border-bottom:1px solid rgba(255,255,255,.15);z-index:1030}.nav-menu ul{display:grid;gap:.25rem;margin:0}.nav-toggle:checked~.nav-menu{display:block}}
+.cat{color:var(--p3);border-bottom:2px solid var(--p3);display:inline-block;margin:1.25rem 0 .5rem;padding-bottom:.25rem}
+.list-group-item{border-color:rgba(0,0,0,.08)}
+.badge-cat{background:var(--p3);color:#fff}
+.chip{display:inline-block;background:var(--p4);color:var(--p5);padding:.2rem .6rem;border-radius:50rem;font-size:.8rem}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container wrap">
+      <a href="index.html" class="brand d-flex align-items-center gap-2"><img src="source/img/Logo Arthur.jpg" width="5%" height="5%" style="border-radius: 50%;"><span>Arthur Education</span></a>
+      
+      <form class="d-none d-lg-flex search-form" role="search">
+          <input class="form-control form-control-sm" type="search" placeholder="Cari..." aria-label="Search">
+      </form>
+      <a href="search.html" class="text-white d-lg-none fs-5" aria-label="Search"><i class="bi bi-search"></i></a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="hamburger d-lg-none mb-0" for="nav-toggle"><i class="bi bi-list"></i></label>
+      <nav class="nav-menu">
+        <ul class="list-unstyled mb-0">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <section class="container py-4 py-md-5">
+    <h1 class="h3">Pertanyaan Terbaru</h1>
+
+    <h2 class="cat h5">Matematika</h2>
+    <div class="list-group shadow-sm">
+      <a class="list-group-item list-group-item-action" href="detail-math-1.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Perbedaan mean, median, dan modus</h5><span class="badge badge-cat">Matematika</span></div>
+        <p class="mb-1 text-muted">Kapan sebaiknya memakai mean, median, atau modus saat data memiliki outlier.</p>
+        <div class="d-flex gap-2"><span class="chip">#statistika</span><span class="chip">#dasar</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-math-2.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Faktorisasi kuadrat ax²+bx+c</h5><span class="badge badge-cat">Matematika</span></div>
+        <p class="mb-1 text-muted">Cara cepat memfaktorkan persamaan kuadrat dan kapan memakai rumus ABC.</p>
+        <div class="d-flex gap-2"><span class="chip">#aljabar</span><span class="chip">#kuadrat</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-math-3.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Pembuktian Teorema Pythagoras</h5><span class="badge badge-cat">Matematika</span></div>
+        <p class="mb-1 text-muted">Pendekatan geometri sederhana untuk membuktikan a²+b²=c².</p>
+        <div class="d-flex gap-2"><span class="chip">#geometri</span><span class="chip">#pembuktian</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-math-4.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Mengenal limit tak hingga</h5><span class="badge badge-cat">Matematika</span></div>
+        <p class="mb-1 text-muted">Contoh limit x→∞ dan teknik penyederhanaan pecahan rasional.</p>
+        <div class="d-flex gap-2"><span class="chip">#kalkulus</span><span class="chip">#limit</span></div>
+      </a>
+    </div>
+
+    <h2 class="cat h5">Biologi</h2>
+    <div class="list-group shadow-sm">
+      <a class="list-group-item list-group-item-action" href="detail-bio-1.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Fotosintesis C3, C4, dan CAM</h5><span class="badge badge-cat">Biologi</span></div>
+        <p class="mb-1 text-muted">Perbedaan jalur fiksasi karbon dan adaptasinya pada lingkungan.</p>
+        <div class="d-flex gap-2"><span class="chip">#fotosintesis</span><span class="chip">#tanaman</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-bio-2.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Mitokondria dan ATP</h5><span class="badge badge-cat">Biologi</span></div>
+        <p class="mb-1 text-muted">Peran rantai transpor elektron dalam menghasilkan energi sel.</p>
+        <div class="d-flex gap-2"><span class="chip">#sel</span><span class="chip">#energi</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-bio-3.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Mekanisme osmosis pada sel tumbuhan</h5><span class="badge badge-cat">Biologi</span></div>
+        <p class="mb-1 text-muted">Mengapa sel menjadi plasmolisis atau turgid.</p>
+        <div class="d-flex gap-2"><span class="chip">#membran</span><span class="chip">#air</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-bio-4.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Antibodi vs antigen</h5><span class="badge badge-cat">Biologi</span></div>
+        <p class="mb-1 text-muted">Peran antibodi dan bagaimana tubuh mengenali antigen.</p>
+        <div class="d-flex gap-2"><span class="chip">#imun</span><span class="chip">#protein</span></div>
+      </a>
+    </div>
+
+    <h2 class="cat h5">Fisika</h2>
+    <div class="list-group shadow-sm">
+      <a class="list-group-item list-group-item-action" href="detail-fis-1.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">GLBB: rumus dan aplikasi</h5><span class="badge badge-cat">Fisika</span></div>
+        <p class="mb-1 text-muted">Hubungan s, v, a, dan t pada gerak lurus berubah beraturan.</p>
+        <div class="d-flex gap-2"><span class="chip">#kinematika</span><span class="chip">#GLBB</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-fis-2.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Hukum Newton II dan FBD</h5><span class="badge badge-cat">Fisika</span></div>
+        <p class="mb-1 text-muted">Cara menyusun free body diagram untuk menyelesaikan soal gaya netto.</p>
+        <div class="d-flex gap-2"><span class="chip">#dinamika</span><span class="chip">#gaya</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-fis-3.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Energi pegas: potensial dan kinetik</h5><span class="badge badge-cat">Fisika</span></div>
+        <p class="mb-1 text-muted">Menggunakan hukum Hooke dan konservasi energi pada sistem pegas.</p>
+        <div class="d-flex gap-2"><span class="chip">#energi</span><span class="chip">#hooke</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-fis-4.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Lensa cembung: fokus dan pembesaran</h5><span class="badge badge-cat">Fisika</span></div>
+        <p class="mb-1 text-muted">Menggunakan persamaan 1/f=1/s+1/s' dan perbesaran m.</p>
+        <div class="d-flex gap-2"><span class="chip">#optik</span><span class="chip">#lensa</span></div>
+      </a>
+    </div>
+
+    <h2 class="cat h5">Bahasa</h2>
+    <div class="list-group shadow-sm">
+      <a class="list-group-item list-group-item-action" href="detail-lang-1.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Kalimat efektif vs tidak efektif</h5><span class="badge badge-cat">Bahasa</span></div>
+        <p class="mb-1 text-muted">Ciri-ciri kalimat efektif dan contoh pembenahan.</p>
+        <div class="d-flex gap-2"><span class="chip">#tata-bahasa</span><span class="chip">#gaya</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-lang-2.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Penggunaan tanda koma</h5><span class="badge badge-cat">Bahasa</span></div>
+        <p class="mb-1 text-muted">Aturan koma untuk klausa, sapaan, dan keterangan.</p>
+        <div class="d-flex gap-2"><span class="chip">#Ejaan</span><span class="chip">#PUEBI</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-lang-3.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Parafrasa vs ringkasan</h5><span class="badge badge-cat">Bahasa</span></div>
+        <p class="mb-1 text-muted">Perbedaan tujuan, teknik, dan contoh singkat.</p>
+        <div class="d-flex gap-2"><span class="chip">#menulis</span><span class="chip">#membaca</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-lang-4.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Teks eksposisi: struktur</h5><span class="badge badge-cat">Bahasa</span></div>
+        <p class="mb-1 text-muted">Tesis, argumentasi, dan penegasan ulang dilengkapi contoh.</p>
+        <div class="d-flex gap-2"><span class="chip">#genre</span><span class="chip">#eksposisi</span></div>
+      </a>
+    </div>
+
+    <h2 class="cat h5">Sejarah</h2>
+    <div class="list-group shadow-sm">
+      <a class="list-group-item list-group-item-action" href="detail-hist-1.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Revolusi Industri: penyebab</h5><span class="badge badge-cat">Sejarah</span></div>
+        <p class="mb-1 text-muted">Faktor teknologi, modal, dan sosial di Inggris abad ke-18.</p>
+        <div class="d-flex gap-2"><span class="chip">#ekonomi</span><span class="chip">#teknologi</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-hist-2.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Kolonialisme vs imperialisme</h5><span class="badge badge-cat">Sejarah</span></div>
+        <p class="mb-1 text-muted">Perbedaan tujuan, metode, dan contoh historis.</p>
+        <div class="d-flex gap-2"><span class="chip">#politik</span><span class="chip">#global</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-hist-3.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Sumpah Pemuda: makna</h5><span class="badge badge-cat">Sejarah</span></div>
+        <p class="mb-1 text-muted">Dampak persatuan bahasa dan organisasi kepemudaan.</p>
+        <div class="d-flex gap-2"><span class="chip">#Indonesia</span><span class="chip">#nasional</span></div>
+      </a>
+      <a class="list-group-item list-group-item-action" href="detail-hist-4.html">
+        <div class="d-flex justify-content-between"><h5 class="mb-1">Perang Dunia II: aliansi</h5><span class="badge badge-cat">Sejarah</span></div>
+        <p class="mb-1 text-muted">Pihak Sekutu vs Poros dan garis waktu ringkas.</p>
+        <div class="d-flex gap-2"><span class="chip">#PDII</span><span class="chip">#aliansi</span></div>
+      </a>
+    </div>
+  </section>
+</main>
+<footer class="py-4 mt-auto border-top bg-light">
+  <div class="container text-center">
+    <small class="text-muted">© 2024 Arthur Education. All Rights Reserved.</small>
+  </div>
+</footer>
+</body>
+</html>
