@@ -1,0 +1,151 @@
+html {
+    overflow-y: scroll;
+}
+
+.ArthurEducation {
+    font-size: 20px;
+    font-weight: 700;
+    color: #243344;
+    letter-spacing: 0.5px;
+    margin-left: 13px;
+}
+
+.Menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #243344;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.Menu a:hover {
+    background-color: #9eb7d9;
+    color: white;
+}
+
+.Menu a.Aktif {
+    background-color: #587ca0;
+    color: white;
+}
+
+.Header {
+    text-align: center;
+    background-color: #b8cde3;
+    color: #243344;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 12px 0;
+    margin: 30px auto;
+    border-radius: 50px;
+    width: 300px;
+}
+
+.Item {
+    text-align: center;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.Item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #b8cde3;
+    transition: all 0.6s ease;
+}
+
+.Item:hover img {
+    animation: animasi 2s ease-in-out infinite;
+    transform: scale(1.08);
+}
+
+@keyframes animasi {
+    0% { transform: scale(1.0); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1.0); }
+}
+
+.Item p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #243344;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.cont {
+    position: relative;
+    margin-top: 30px;
+    min-height: 150px;
+}
+
+.isiCont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b8cde3;
+    color: #243344;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.6s ease;
+}
+
+.isiCont p{
+    text-align: left;
+}
+
+.daftarTim {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.anggota {
+  background: #243344;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #dde6f2;
+  border: 1px solid #dde6f2;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.anggota span:first-child {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.anggota span:last-child::before {
+  content: "[";
+}
+
+.anggota span:last-child::after {
+  content: "]";
+}
+
+#sejarah:checked ~ .cont .contentSejarah,
+#visi:checked ~ .cont .contentVisi,
+#misi:checked ~ .cont .contentMisi,
+#tim:checked ~ .cont .contentTim,
+#kontak:checked ~ .cont .contentContact {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+}
